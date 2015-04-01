@@ -4,6 +4,7 @@ import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,6 +36,7 @@ public class MainActivity extends Activity {
         //String newButtonString = Integer.toString(n);
         String newButtonString = qoutes[n];
                         ((TextView) f).setText(newButtonString);
+        Log.i("MyApp","button pressed");
     }
 
 
