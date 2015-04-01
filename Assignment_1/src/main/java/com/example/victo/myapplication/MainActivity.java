@@ -1,17 +1,13 @@
 package com.example.victo.myapplication;
 
 import android.content.res.Resources;
-import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-
-import java.lang.reflect.Field;
 import java.util.Random;
 
 
@@ -23,9 +19,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
+
+
     public void buttonOnClick(View v){
         //gör nåt
-        Button button = (Button ) v;
+
         Random rand = new Random();
         TextView f = (TextView) findViewById(R.id.printView);
 
@@ -35,8 +33,8 @@ public class MainActivity extends Activity {
         int  n = rand.nextInt(3);
         //String newButtonString = Integer.toString(n);
         String newButtonString = qoutes[n];
-                        ((TextView) f).setText(newButtonString);
-        Log.i("MyApp","button pressed");
+                        (f).setText(newButtonString);
+        Log.i("MyApp","button pressed!");
     }
 
 
