@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import java.util.Random;
 
@@ -17,6 +18,48 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /*
+        Button button = (Button) findViewById(R.id.qouteButton);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        */
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("Destroy", "Program forced shut down");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("Stop", "Program stopped");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("Pause", "Program paused");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("Resume", "Program resumed");
+    }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("Start", "Program started, yay!");
     }
 
 
