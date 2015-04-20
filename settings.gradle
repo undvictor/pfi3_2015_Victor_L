@@ -1,1 +1,1 @@
-include ':Assignment_1', ':ass2', 'Assignment2'
+include ':Assignment_1', ':ass2', ':assignment_3', 'Assignment2', ':assignment_3_starter_kit_lind_victor_coolsexyman', ':assignment3'
