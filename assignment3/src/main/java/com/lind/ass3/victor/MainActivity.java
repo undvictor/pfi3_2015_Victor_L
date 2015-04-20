@@ -1,32 +1,29 @@
-package com.example.victo.ass2;
+package com.lind.ass3.victor;
 
-import android.app.ActionBar;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-import com.example.victo.ass2.HomeFragment;
-import com.example.victo.ass2.R;
+import android.view.ViewGroup;
 
 
-public class MainActivity extends ActionBarActivity{
-    public String myString;
+//first activity
+
+public class MainActivity extends ActionBarActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        HomeFragment bf = new HomeFragment();
-        ft.replace(R.id.main_layout,bf);
-        ft.commit();
 
+        android.app.FragmentManager fm = getFragmentManager();
+        android.app.FragmentTransaction ft = fm.beginTransaction();
+        ActivityFragment t = new ActivityFragment();
+        ft.replace(R.id.container,t);
+        ft.commit();
     }
 
 
@@ -52,4 +49,19 @@ public class MainActivity extends ActionBarActivity{
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * A placeholder fragment containing a simple view.
+     */
+    public static class PlaceholderFragment extends Fragment {
+
+        public PlaceholderFragment() {
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            return rootView;
+        }
+    }
 }
