@@ -8,87 +8,93 @@
     <GridLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:columnCount="2"
+        android:columnCount="4"
         android:rowCount="4"
-        android:clickable="true">
+        android:clickable="true"
+        android:id="@+id/gridLayout"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
 
         <ImageView
-        android:layout_width="100"
-        android:layout_height="100"
-        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+            android:layout_margin="10dp"
         android:layout_row="0"
+        android:layout_gravity="center"
         android:layout_column="0"
         android:background="@drawable/earth"
-        android:layout_columnWeight="1"
         android:id="@+id/earth" />
 
         <ImageView
-            android:layout_width="100"
-            android:layout_height="100"
-            android:id="@+id/jupiter"
-            android:layout_gravity="right"
-            android:layout_margin="5dp"
-            android:background="@drawable/jupiter"
-            android:layout_columnWeight="1"
-            android:layout_row="0"
-            android:layout_column="1" />
-
-        <ImageView
-            android:layout_width="100"
-            android:layout_height="100"
-            android:id="@+id/mars"
-            android:background="@drawable/mars"
-            android:layout_margin="5dp"
-            android:layout_row="1"
-            android:layout_column="0" />
-
-        <ImageView
-            android:layout_width="100"
-            android:layout_height="100"
-            android:layout_margin="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
             android:layout_gravity="right"
             android:id="@+id/mercury"
             android:background="@drawable/mercury"
-            android:layout_row="1"
-            android:layout_column="1" />
+            android:layout_row="0"
+            android:layout_column="3" />
 
         <ImageView
-            android:layout_width="100"
-            android:layout_height="100"
-            android:layout_margin="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
             android:id="@+id/neptune"
             android:background="@drawable/neptune"
-            android:layout_row="2"
+            android:layout_row="1"
             android:layout_column="0" />
 
         <ImageView
-            android:layout_width="100"
-            android:layout_height="100"
-            android:layout_margin="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
             android:layout_gravity="right"
             android:id="@+id/saturn"
             android:background="@drawable/saturn"
-            android:layout_row="2"
-            android:layout_column="1" />
+            android:layout_row="1"
+            android:layout_column="3" />
 
         <ImageView
-            android:layout_width="100"
-            android:layout_height="100"
-            android:layout_margin="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
             android:id="@+id/uranus"
-            android:layout_gravity="right"
             android:background="@drawable/uranus"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+            android:layout_margin="10dp"
+        android:id="@+id/venus"
+        android:background="@drawable/venus"
+        android:layout_row="2"
+        android:layout_column="3" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/jupiter"
+            android:layout_margin="10dp"
+            android:background="@drawable/jupiter"
             android:layout_row="3"
             android:layout_column="0" />
 
         <ImageView
-            android:layout_width="100"
-            android:layout_height="100"
-            android:layout_margin="5dp"
-            android:id="@+id/venus"
-            android:layout_gravity="right"
-            android:background="@drawable/venus"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/mars"
+            android:background="@drawable/mars"
             android:layout_row="3"
-            android:layout_column="1" />
+            android:layout_column="3" />
+
+
     </GridLayout>
+
 </RelativeLayout>
