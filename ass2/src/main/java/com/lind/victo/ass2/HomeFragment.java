@@ -1,20 +1,15 @@
-package com.example.victo.ass2; /**
+package com.lind.victo.ass2; /**
  * Created by Victo on 2015-04-09.
  */
 
-import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.app.ListFragment;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.Toast;
-
-import com.example.victo.ass2.R;
 
 
 /**

@@ -1,14 +1,11 @@
-package com.example.victo.assignment_2;
+package com.lind.victo.ass2;
 
-import android.app.ActionBar;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity{
@@ -16,7 +13,7 @@ public class MainActivity extends ActionBarActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        myString= "Lars";
+
         setContentView(R.layout.activity_main);
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
