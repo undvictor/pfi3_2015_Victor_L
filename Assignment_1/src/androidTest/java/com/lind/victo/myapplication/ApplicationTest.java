@@ -1,4 +1,4 @@
-package com.example.victo.assignment2;
+package com.lind.victo.myapplication;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
