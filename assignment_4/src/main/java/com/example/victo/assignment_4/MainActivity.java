@@ -11,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
-
 public class MainActivity extends ActionBarActivity {
 
     @Override
