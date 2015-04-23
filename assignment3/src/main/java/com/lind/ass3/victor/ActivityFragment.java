@@ -39,6 +39,7 @@ public class ActivityFragment extends Fragment implements AdapterView.OnItemSele
         View view =  inflater.inflate(R.layout.fragment_travels, container, false);
         spinnerFrom = (Spinner) view.findViewById(R.id.spinner);
         spinnerTo = (Spinner) view.findViewById(R.id.spinner2);
+
         ///Do whatever
         ExpandableListView ev = (ExpandableListView) view.findViewById(R.id.expandableListView);
         myExListAdapter = new ExListAdapter(getActivity(),myItems);

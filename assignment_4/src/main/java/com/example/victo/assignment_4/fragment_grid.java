@@ -27,6 +27,9 @@ public class fragment_grid extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         planets.clear();
+
+
+
         Drawable d = getResources().getDrawable(R.drawable.earth);
         planets.add(new Planet(getResources().getString(R.string.earth_name),d,getResources().getString(R.string.earth_description)));
         d = getResources().getDrawable(R.drawable.mars);
