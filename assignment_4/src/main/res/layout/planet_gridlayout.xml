@@ -17,6 +17,7 @@ android:id="@+id/planetFragment">
     android:verticalSpacing="10dp"
     android:horizontalSpacing="10dp"
     android:stretchMode="columnWidth"
-    android:gravity="center"
+    android:gravity="right"
+    android:layout_marginLeft="20dp"
     />
 </RelativeLayout>

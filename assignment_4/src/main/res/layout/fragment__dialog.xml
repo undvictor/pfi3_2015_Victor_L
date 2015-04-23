@@ -1,14 +1,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="se.mah.k3.lecture_4_examples_adapter_extra.FragmentDialog">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Arthur Green"
+        android:text="@string/torsten_name"
         android:id="@+id/tv_dialog_title"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -18,8 +17,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/iv_dialog"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
-        android:src="@drawable/earth" />
+        android:layout_marginTop="60dp"
+        android:src="@drawable/man" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -33,10 +32,12 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
+            android:text="@string/torsten_description"
             android:id="@+id/tv_dialog_description"
             android:layout_below="@+id/iv_dialog"
-            android:layout_alignParentStart="true" />
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"/>
     </ScrollView>
 
 </RelativeLayout>
